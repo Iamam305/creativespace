@@ -1,0 +1,55 @@
+
+.max-width{
+    max-width: 1500px;
+    margin: auto;
+}
+
+.primary-color{
+    color: var(--primary-color);
+}
+.secondry-color{
+    color: var(--secondry-color)
+}
+
+.highlight-color{
+    color: var(--highlight-color);
+}
+.heading{
+    font-size: 40px;
+    margin: 30px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.small-heading{
+    font-size: 22px;
+    margin: 30px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.para{
+    font-size: 20px;
+    margin: 10px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+.card-parent{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+
+}
+/* .card{
+    box-shadow: 0px 0px 5px 0px black;
+}
+.card:hover{
+    box-shadow: 0px 0px 15px 0px black;
+} */

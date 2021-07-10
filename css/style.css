@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+   
+    
+}    
+:root{
+    --primary-color:#000000;
+    --secondry-color: #CBCBCB;
+    --highlight-color:#FF5723;
+}
+
+
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    /* overflow:hidden; */
+    background-color: rgb(255, 255, 255);
+    
+
+}
+a:hover{
+    color: var(--highlight-color);
+}
+
+
+
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+
+
+/* ********************************************NAVIGATION BAR ******************************************** */
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+
+
+}
+.nav-parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar{
+    max-width: 1500px;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ********************************************CHANGE COLOR ON SCROLL******************************************** */
+
+.nav-changeColor{
+    background-color: #222222;
+
+}
+
+/* ********************************************LOgo******************************************** */
+
+
+.logo img{
+    display: flex;
+    margin-left: 30px;
+    width: 50px;
+    
+}
+
+/* ********************************************MENU ITEM in nav bar******************************************** */
+
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 0px 0px 2px black; */
+    margin: 10px;
+    padding: 10px;
+    
+}
+.nav-menu li a:hover{
+    color: var(--highlight-color);
+}
+.nav-social{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-right: 30px;
+    font-size: 20px;
+    
+}
+.nav-social li a{
+    margin: 0px;
+    padding: 6px;
+}
+
+/* ********************************************hamburger menu******************************************** */
+
+.hamburger{
+    display: none;
+    margin-right: 20px;
+}
+
+.bar1,.bar2,.bar3{
+    width: 20px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 2px;
+
+}
+
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+
+
+/* ********************************************HERO SECTION******************************************** */
+.hero-parent{
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
+}
+.hero-parent::before{
+    content: "";
+    position:absolute;
+    background-attachment: fixed;
+    z-index: -11;
+    background-image: url(../img/kitchen-1940174_1920.jpg);
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero{
+   
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content:flex-start;
+}
+
+
+.hero-text{
+    margin-top: 140px;
+    margin-left: 190px;
+    /* height: 300px; */
+    padding: 20px;
+    text-align: left;
+    /* text-shadow: 0px 0px 10px black; */
+}
+.hero-text h1{
+    margin: 30px 0px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.hero-text h2{
+    font-size: 52px;
+    margin: 10px 0px;
+}
+.hero-text p{
+    margin: 20px 0px;
+    font-weight: bold;
+}
+.hero-cta{
+    margin-top: 40px;
+}
+.hero-cta a{
+    background-color:var(--highlight-color);
+    padding: 10px 15px;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+
+}
+.hero-cta a:hover{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+    color: var(--secondry-color);
+}
+
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+
+
+
+
+/* ********************************************ABOUT US******************************************** */
+
+.about-parent{
+    background-color: #222222;
+    overflow-x: hidden
+}
+
+.about{
+   padding: 110px 0px;
+   
+}
+.about h2{
+    text-align: center;
+}
+.about-content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.about-content img{
+    padding: 5px;
+    width: 45%;
+    border: 2px solid var(--highlight-color);
+}
+.about-text{
+    width:45%;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--highlight-color);
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+/* ********************************************services section******************************************** */
+
+.services-parent{
+    margin-top: 150px;
+    overflow-x: hidden
+
+}
+.services-parent h2{
+    text-align: center;
+}
+.services-parent p{
+    text-align: center;
+}
+.service-card-parent{
+    margin: 100px 30px;
+    
+
+}
+.service-card{
+    box-shadow: 0px 0px 10px 0px black;
+    margin: auto;
+    background-color: #222222;
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.service-card img{
+    width: 100%;
+    height: 80%;
+    filter: brightness(0.5);
+    
+}
+.service-card img:hover{
+    transform:scale(1.2);
+    
+    
+}
+.card-text{
+    color: var(--highlight-color);
+    background-color: #222222;
+    text-align: center;
+    position: sticky;
+}
+/* ********************************************portfolio section******************************************** */
+
+.portfolio-parent{
+    background-color: #222222;
+    overflow-x: hidden
+}
+
+.portfolio{
+    padding: 80px 0px;
+}
+.portfolio h2{
+    text-align: center;
+}
+.portfolio p{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+.portfolio-card-parent{
+    margin: 100px 30px;
+}
+.portfolio-card{
+    background-color: #222222;
+    overflow: hidden;
+}
+.portfolio-card img{
+    height: 70%;
+    width: 70%;
+    cursor: pointer;
+    margin: auto;
+}
+
+
+/* *****************************************testimonials****************************************************** */
+
+
+.review-parent{
+    background-color: #000000b0;
+    overflow-x: hidden
+}
+.review-parent::before{
+    content: "";
+    position:absolute;
+    background-attachment: fixed;
+    z-index: -1100;
+    background-image: url(../img/1625739074601.webp);
+    width: 100%;
+    height:100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.review-parent h2{
+    margin: 0px;
+    padding: 40px 0px;
+    text-align: center;
+
+}
+
+.review{
+    margin: auto;
+    text-align: center;
+    padding: 20px 0px;
+    width: 60%;
+    color: var(--secondry-color);
+}
+.reviwe p{
+    text-align: center;
+    color: var(--secondry-color);
+    font-weight: bold;
+   
+}
+/******************************************contact*******************************************************/
+
+.contact-parent{
+    background-color: #222222;
+    overflow-x: hidden
+}
+/* .contact{
+    display: flex;
+} */
+.contact h2{
+    margin: 0;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.contact-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-content h2{
+    margin: 0;
+    padding: 0%;
+    text-align: left;
+}
+.contact-text{
+    width: 300px;  
+    margin: 20px 0px;
+    text-align: left;
+}
+.contact-text p{
+    margin: 10px 0px;
+}
+/******************************************contact form*******************************************************/
+
+.form-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid var(--highlight-color);
+   
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form input,form textarea{
+    padding: 20px;
+    width: 250px;
+    border: 2px solid var(--secondry-color);
+    background-color: transparent;
+    color: var(--highlight-color);
+    margin: 10px 0px;
+}
+.submit{
+    background-color: var(--highlight-color);
+    color: var(--secondry-color);
+    cursor: pointer;
+}
+
+/******************************************modal contact form*******************************************************/
+
+/* .modal-form-parent{
+    background-color: #222222;
+    position: absolute;
+    z-index: 9;
+    margin: auto;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+.close-modal{
+    position: relative;
+    text-align: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+.modal-form{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-form-content{
+    text-align: center;
+    border: 2px solid var(--highlight-color);
+}
+.modal-form-heading{
+    width: 70%;
+    margin: auto;
+} */
+
+footer{
+    overflow-x: hidden;
+    background-color: #222222;
+    text-align: center;
+    padding: 20px 0px ;
+}
+
+
+/******************************************gallary*******************************************************/
+
+.gallary-parent{
+    background-color: #222222;
+    padding: 150px 0px;
+}
+.gallary-nav{
+    width: 70%;
+    height: 30%;
+    margin: auto;
+}
+.gallary-nav img{
+    margin: 0px 10px;
+    border: 2px solid var(--highlight-color);
+    aspect-ratio: 16/9;
+}
+.gallary{
+    padding: 100px 0px;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+   
+    
+}
+.gallary img{
+    aspect-ratio: 16/9;
+    border: 2px solid var(--highlight-color);
+}

@@ -1,0 +1,412 @@
+@media only screen and (max-width: 750px){
+
+/* ********************************************Utility ******************************************** */
+
+
+    .heading{
+        font-size: 30px;
+
+    }
+    
+    .para{
+        font-size: 20px;
+
+    }
+    a{
+        text-shadow: none;
+        text-decoration: none;
+    }
+
+
+    
+/* ********************************************NAVIGATION BAR ******************************************** */
+    .navbar{
+        width: 100%;
+        height: 70px;
+        top:0;
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        overflow-x: hidden;
+    }
+
+    /* ********************************************CHANGE COLOR ON SCROLL******************************************** */
+    .nav-changeColor{
+       
+        background-color: black;
+    
+    }
+    
+    /* ********************************************LOgo******************************************** */
+
+    .logo{
+        display: flex;
+        
+    }
+    
+    /* ********************************************MENU ITEM in nav bar******************************************** */
+    .nav-menu{
+        position: absolute;
+        top: -500%;
+        width: 100%;
+        right: 0;
+        background-color: black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .nav-menu li{
+        margin: 20px 0px;
+    }
+    .nav-social{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    /* ********************************************hamburger menu******************************************** */
+
+    .menu-open{
+        top: 70px;
+        right: 0px;
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .bar1-open{
+        transform:rotate(45deg);
+        margin: 0px;
+        position: absolute;
+    }
+    .bar2-open{
+        display: none;
+        margin: 0px;
+    }
+    .bar3-open{
+        transform:rotate(-45deg);
+        margin: 0px;
+        
+    }
+
+    /* **************************************************************************************** */
+    /* **************************************************************************************** */
+    /* **************************************************************************************** */
+
+    /* ********************************************HERO SECTION******************************************** */
+
+.hero-parent{
+    /* background-color: rgba(0, 0, 0, 0.637); */
+    width: 100%;
+    height: 900px;
+}
+.hero-parent::before{
+    content: "";
+    position:absolute;
+    background-attachment: fixed;
+    z-index: -11;
+    background-image: url(../img/kitchen-1940174_1920.jpg);
+    width: 100%;
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.hero-text{
+    margin-top: 180px;
+    margin: auto;
+    height: 300px;
+    padding: 20px;
+    text-align: left;
+    text-shadow: 0px 0px 5px black;
+}
+/* .hero-text h1{
+    margin: 20px 0px;
+    font-size: 50px;
+} */
+.hero-text p{
+    margin: 10px 0px;
+}
+.hero-cta{
+    margin-top: 30px;
+}
+.hero-cta a{
+    background-color:var(--highlight-color);
+    padding: 10px 15px;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+
+}
+.hero-cta a:hover{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+
+    /* ********************************************about us section******************************************** */
+    
+    .about-parent{
+        background-color: #222222;
+        overflow-x: hidden;
+    }
+    
+    .about{
+       padding: 150px 0px;
+       
+    }
+    .about h2{
+        text-align: center;
+    }
+    .about-content{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-content img{
+        width: 90%;
+        border: 2px solid var(--highlight-color);
+    }
+    .about-text{
+        width:90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--highlight-color);
+        background-color: rgba(0, 0, 0, 0.322);
+    }
+
+
+/* ********************************************services section******************************************** */
+
+.services-parent{
+    margin-top: 150px;
+    width: 90vw;
+    margin: auto;
+    overflow-x: hidden
+    
+
+}
+.services-parent h2{
+    text-align: center;
+}
+.services-parent p{
+    text-align: center;
+}
+.service-card-parent{
+    padding: 100px 10px;
+    margin: auto;
+    grid-gap: 0;
+    justify-content: center;
+}
+.service-card{
+    box-shadow: 0px 0px 10px 0px black;
+    margin: auto;
+    background-color: #222222;
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+}
+.service-card img{
+    width: 100%;
+    height: 80%;
+    width: 90vw;
+    margin: auto;
+    filter: brightness(0.5);
+    
+}
+.service-card img:hover{
+    transform:scale(1.2);
+    
+    
+}
+.card-text{
+    color: var(--highlight-color);
+    background-color: #222222;
+    width: 90vw;
+}
+
+    /* ********************************************portfolio section******************************************** */
+
+.portfolio-parent{
+    background-color: #222222;
+    overflow-x: hidden;
+
+}
+
+.portfolio{
+    padding: 80px 0px;
+
+}
+.portfolio h2{
+    text-align: center;
+}
+.portfolio p{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+.portfolio-card-parent{
+    margin: 100px 0px;
+
+}
+.portfolio-card{
+    background-color: #222222;
+    overflow: hidden;
+}
+.portfolio-card img{
+    height: 90%;
+    width: 90%;
+    cursor: pointer;
+    margin: auto;
+}
+
+/* *****************************************testimonials****************************************************** */
+
+
+.review-parent{
+    background-color: #000000b7;
+    overflow-x: hidden;
+    /* padding-top:140px; */
+}
+.review-parent::before{
+    content: "";
+    position:absolute;
+    background-attachment: fixed;
+    z-index: -1100;
+    background-image: url(../img/1625739074601.webp);
+    width: 100%;
+    height:100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.review-parent h2{
+    margin: 0px;
+    padding: 40px 0px;
+    text-align: center;
+
+}
+
+.review{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    color:var(--secondry-color);
+}
+.reviwe p{
+    text-align: center;
+    color:var(--secondry-color);
+   
+}
+/* *****************************************contact us****************************************************** */
+
+.contact-parent{
+    background-color: #222222;
+    overflow-x: hidden;
+}
+/* .contact{
+    display: flex;
+} */
+.contact h2{
+    margin: 0;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-content h2{
+    margin: 0px 0px;
+    padding: 0%;
+    text-align: left;
+    margin: auto;
+    width: 90vw;
+    text-align: center;
+}
+.contact-text{
+    width: 250px;  
+    padding: 40px 0px;
+    margin: auto;
+    text-align: left;
+    width: 90vw;
+}
+.contact-text p{
+    margin: 10px 0px;
+}
+
+/******************************************contact form*******************************************************/
+
+.form-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+    padding: 0px 0px;
+    width: 90vw;
+    border: 2px solid var(--highlight-color);
+   
+    
+}
+.form-parent h2{
+    margin: 20px 0px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input , form textarea{
+    padding: 20px;
+    width: 70vw;
+    margin: 10px 0px;
+}
+.submit{
+    background-color: var(--highlight-color);
+    color: var(--secondry-color);
+}
+
+/******************************************gallary*******************************************************/
+
+.gallary-parent{
+    background-color: #222222;
+    padding: 150px 0px;
+}
+.gallary-nav{
+    width: 80%;
+    margin: auto;
+}
+.gallary-nav img{
+    margin: 0px 10px;
+    border: 2px solid var(--highlight-color);
+    aspect-ratio: 16/9;
+}
+.gallary{
+    padding: 50px 0px;
+    width: 90%;
+}
+.gallary img{
+    aspect-ratio: 16/9;
+    border: 2px solid var(--highlight-color);
+}
+}
+
